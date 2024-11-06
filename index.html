@@ -3,23 +3,39 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <!-- Icon -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Stylesheet -->
         <link rel="stylesheet" href="styles/normalize-fwd" />
         <link rel="stylesheet" href="styles/styles.css" />
     </head>
+
     <body>
-        <header>
+        <header class="site-header">
             <!-- Logo, Navigation -->
-            <a href="">
-                <img src="media/logo_jeju.png" alt="Website Logo" />
+            <a href="index.html">
+                <img
+                    src="media/logo_jeju.png"
+                    alt="Website Logo"
+                    class="logo"
+                />
             </a>
 
-            <nav>
-                <button>
-                    <img src="media/navicon.png" alt="Hamburger Icon" />
+            <nav class="site-navigation">
+                <button class="navicon">
+                    <img src="media/navicon.svg" alt="Navigation menu icon" />
                 </button>
 
                 <ul class="nav-list">
@@ -33,40 +49,56 @@
 
         <main>
             <!-- Hero, fixed Back to Top button, Basic Info -->
-            <video controls loop muted poster="media/hero_poster.jpg">
-                <source src="media/hero.mp4" type="video/mp4" />
-            </video>
-            <h1>Hello, Jeju</h1>
-            <!-- <p>혼저옵서예 [Hon Jeo Op Seo Ye; Welcome]</p> -->
-            <table>
-                <tr>
-                    <td>Country</td>
-                    <td>South Korea</td>
-                </tr>
-                <tr>
-                    <td>Korean Name</td>
-                    <td>제주도</td>
-                </tr>
-                <tr>
-                    <td>Total Population</td>
-                    <td>678,324 (October 2022)</td>
-                </tr>
-            </table>
-            <blockquote cite="">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptas, doloremque!
-            </blockquote>
 
-            <button>&#8613;</button>
+            <header class="hero">
+                <video autoplay loop muted poster="media/hero_poster.jpg">
+                    <source src="media/hero.mp4" type="video/mp4" />
+                </video>
+                <h1>Hello, <span class="jeju-name">Jeju</span></h1>
+                <!-- <p>혼저옵서예 [Hon Jeo Op Seo Ye; Welcome]</p> -->
+                <a href="#section-bottom">
+                    <img
+                        src="media/arrow-down.png"
+                        alt="Arrow pointing down"
+                        class="arrow-down"
+                    />
+                </a>
+            </header>
+
+            <section class="section-bottom" id="section-bottom">
+                <!-- <table>
+                    <tr>
+                        <td>Country</td>
+                        <td>South Korea</td>
+                    </tr>
+                    <tr>
+                        <td>Korean Name</td>
+                        <td>제주도</td>
+                    </tr>
+                    <tr>
+                        <td>Total Population</td>
+                        <td>678,324 (October 2022)</td>
+                    </tr>
+                </table> -->
+                <blockquote cite="">
+                    <span class="quote open">&#8220;</span> Lorem ipsum dolor
+                    sit amet consectetur adipisicing elit. Voluptas, doloremque!
+                    <span class="quote close">&#8221;</span>
+                </blockquote>
+
+                <!-- <button>&#8613;</button> -->
+            </section>
         </main>
 
-        <footer>
+        <footer class="site-footer">
             <!-- Copyright, Social media -->
             <p>&#169; 2024 Dayna Cho</p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-x-twitter"></a>
+            <section class="social-network">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-x-twitter"></a>
+            </section>
         </footer>
     </body>
 </html>
