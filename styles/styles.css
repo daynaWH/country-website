@@ -30,7 +30,7 @@ body {
     margin: 0;
     background-color: #fef5f0;
     color: #373435;
-    font-family: "Nunito Sans", sans-serif;
+    font-family: "Nunito", sans-serif;
     font-weight: 300;
     font-size: 1rem;
     line-height: 1.5;
@@ -42,8 +42,9 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Alegreya Sans SC", sans-serif;
+    font-family: "Alegreya Sans", sans-serif;
     font-weight: 500;
+    text-transform: uppercase;
 }
 
 p {
@@ -155,7 +156,7 @@ video {
     height: 70vh;
 }
 
-h1 {
+.hello {
     position: absolute;
     top: 100;
     width: 70%;
@@ -183,9 +184,16 @@ blockquote {
     position: absolute;
 }
 
-/* History Page */
-
 /* Culture Page */
+
+.site-header {
+    position: sticky;
+    top: 0;
+}
+
+/* Food Page */
+
+/* Explore Page */
 
 /* Credits Page */
 

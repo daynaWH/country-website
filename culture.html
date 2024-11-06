@@ -3,23 +3,39 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <!-- Icon -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Stylesheet -->
         <link rel="stylesheet" href="styles/normalize-fwd" />
         <link rel="stylesheet" href="styles/styles.css" />
     </head>
+
     <body>
-        <header>
+        <header class="site-header">
             <!-- Logo, Navigation -->
-            <a href="">
-                <img src="media/logo_jeju.png" alt="Website Logo" />
+            <a href="index.html">
+                <img
+                    src="media/logo_jeju.png"
+                    alt="Website Logo"
+                    class="logo"
+                />
             </a>
 
-            <nav>
-                <button>
-                    <img src="media/navicon.png" alt="Hamburger Icon" />
+            <nav class="site-navigation">
+                <button class="navicon">
+                    <img src="media/navicon.svg" alt="Navigation menu icon" />
                 </button>
 
                 <ul class="nav-list">
@@ -35,7 +51,9 @@
             <!-- Sections of Image and Description, fixed Back to Top button -->
             <h1>Culture</h1>
             <section>
-                <img src="" alt="" />
+                <h2>Jeju Haenyeo (women divers)</h2>
+                <img src="media/haenyeo.jpg" alt="Image of haenyeo" />
+                <img src="media/haenyeo2.jpg" alt="Image of a haenyeo diving" />
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Eveniet, debitis perferendis velit, natus nisi asperiores
@@ -45,7 +63,8 @@
                 </p>
             </section>
             <section>
-                <img src="" alt="" />
+                <h2>Dol hareubang</h2>
+                <img src="media/hareubang.jpg" alt="Image of hareubangs" />
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Eveniet, debitis perferendis velit, natus nisi asperiores
@@ -55,17 +74,11 @@
                 </p>
             </section>
             <section>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                    Eveniet, debitis perferendis velit, natus nisi asperiores
-                    eos officiis temporibus aperiam deserunt consequatur, in
-                    expedita quae? Nesciunt officia tenetur dignissimos iure
-                    iusto!
-                </p>
-                <img src="" alt="" />
-            </section>
-            <section>
-                <img src="" alt="" />
+                <h2>Housing Culture</h2>
+                <img
+                    src="media/choga.jpg"
+                    alt="Image of a traditional house in Jeju"
+                />
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Eveniet, debitis perferendis velit, natus nisi asperiores
@@ -75,7 +88,25 @@
                 </p>
             </section>
             <section>
-                <img src="" alt="" />
+                <h2>Horse</h2>
+                <img
+                    src="media/horseriding.jpg"
+                    alt="Image of horseriding in Jeju"
+                />
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Eveniet, debitis perferendis velit, natus nisi asperiores
+                    eos officiis temporibus aperiam deserunt consequatur, in
+                    expedita quae? Nesciunt officia tenetur dignissimos iure
+                    iusto!
+                </p>
+            </section>
+            <section>
+                <h2>Jeju Language</h2>
+                <img
+                    src="media/jeju_language.jpg"
+                    alt="Welcome written in Jeju language"
+                />
                 <p>
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Eveniet, debitis perferendis velit, natus nisi asperiores
@@ -88,13 +119,15 @@
             <button>&#8613;</button>
         </main>
 
-        <footer>
+        <footer class="site-footer">
             <!-- Copyright, Social media -->
             <p>&#169; 2024 Dayna Cho</p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-x-twitter"></a>
+            <section class="social-network">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-x-twitter"></a>
+            </section>
         </footer>
     </body>
 </html>
