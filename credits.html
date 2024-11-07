@@ -3,22 +3,53 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Stylesheet -->
         <link rel="stylesheet" href="styles/normalize-fwd" />
-        <link rel="stylesheet" href="" />
+        <link rel="stylesheet" href="styles/styles.css" />
+
+        <!-- JS file -->
+        <script src="scripts/scripts.js" defer></script>
     </head>
+
     <body>
-        <header>
+        <header class="site-header">
             <!-- Logo, Navigation -->
-            <a href="">
-                <img src="media/logo_jeju.png" alt="Website Logo" />
+            <a href="index.html">
+                <img
+                    src="media/logo_jeju.svg"
+                    alt="Website Logo"
+                    class="logo"
+                />
             </a>
 
-            <nav>
-                <button>
-                    <img src="media/navicon.png" alt="Hamburger Icon" />
+            <nav class="site-navigation">
+                <button id="nav-btn">
+                    <svg
+                        clip-rule="evenodd"
+                        fill-rule="evenodd"
+                        stroke-linejoin="round"
+                        stroke-miterlimit="2"
+                        viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg"
+                        aria-label="Navigation menu icon"
+                    >
+                        <path
+                            d="m6 17.75c0-.414.336-.75.75-.75h10.5c.414 0 .75.336.75.75s-.336.75-.75.75h-10.5c-.414 0-.75-.336-.75-.75zm-4-4c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm0-4c0-.414.336-.75.75-.75h18.5c.414 0 .75.336.75.75s-.336.75-.75.75h-18.5c-.414 0-.75-.336-.75-.75zm4-4c0-.414.336-.75.75-.75h10.5c.414 0 .75.336.75.75s-.336.75-.75.75h-10.5c-.414 0-.75-.336-.75-.75z"
+                            fill-rule="nonzero"
+                        />
+                    </svg>
                 </button>
 
-                <ul class="nav-list">
+                <ul id="nav-list">
                     <li><a href="culture.html">Culture</a></li>
                     <li><a href="food.html">Food</a></li>
                     <li><a href="explore.html">Explore</a></li>
@@ -29,13 +60,53 @@
 
         <main></main>
 
-        <footer>
+        <footer class="site-footer">
             <!-- Copyright, Social media -->
             <p>&#169; 2024 Dayna Cho</p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-x-twitter"></a>
+            <section class="social-network">
+                <a href="#"
+                    ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        aria-label="Facebook icon"
+                    >
+                        <path
+                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-3 7h-1.924c-.615 0-1.076.252-1.076.889v1.111h3l-.238 3h-2.762v8h-3v-8h-2v-3h2v-1.923c0-2.022 1.064-3.077 3.461-3.077h2.539v3z"
+                        /></svg
+                ></a>
+                <a href="#"
+                    ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        aria-label="Instagram icon"
+                    >
+                        <path
+                            d="M15.233 5.488c-.843-.038-1.097-.046-3.233-.046s-2.389.008-3.232.046c-2.17.099-3.181 1.127-3.279 3.279-.039.844-.048 1.097-.048 3.233s.009 2.389.047 3.233c.099 2.148 1.106 3.18 3.279 3.279.843.038 1.097.047 3.233.047 2.137 0 2.39-.008 3.233-.046 2.17-.099 3.18-1.129 3.279-3.279.038-.844.046-1.097.046-3.233s-.008-2.389-.046-3.232c-.099-2.153-1.111-3.182-3.279-3.281zm-3.233 10.62c-2.269 0-4.108-1.839-4.108-4.108 0-2.269 1.84-4.108 4.108-4.108s4.108 1.839 4.108 4.108c0 2.269-1.839 4.108-4.108 4.108zm4.271-7.418c-.53 0-.96-.43-.96-.96s.43-.96.96-.96.96.43.96.96-.43.96-.96.96zm-1.604 3.31c0 1.473-1.194 2.667-2.667 2.667s-2.667-1.194-2.667-2.667c0-1.473 1.194-2.667 2.667-2.667s2.667 1.194 2.667 2.667zm4.333-12h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm.952 15.298c-.132 2.909-1.751 4.521-4.653 4.654-.854.039-1.126.048-3.299.048s-2.444-.009-3.298-.048c-2.908-.133-4.52-1.748-4.654-4.654-.039-.853-.048-1.125-.048-3.298 0-2.172.009-2.445.048-3.298.134-2.908 1.748-4.521 4.654-4.653.854-.04 1.125-.049 3.298-.049s2.445.009 3.299.048c2.908.133 4.523 1.751 4.653 4.653.039.854.048 1.127.048 3.299 0 2.173-.009 2.445-.048 3.298z"
+                        /></svg
+                ></a>
+                <a href="#"
+                    ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        shape-rendering="geometricPrecision"
+                        text-rendering="geometricPrecision"
+                        image-rendering="optimizeQuality"
+                        fill-rule="evenodd"
+                        clip-rule="evenodd"
+                        viewBox="0 0 512 509.64"
+                        width="24"
+                        height="24"
+                        aria-label="X (twitter) icon"
+                    >
+                        <path
+                            fill="#fff"
+                            d="M115.612 0h280.776C459.975 0 512 52.025 512 115.612v278.416c0 63.587-52.025 115.612-115.612 115.612H115.612C52.025 509.64 0 457.615 0 394.028V115.612C0 52.025 52.025 0 115.612 0zm208.127 148.355h36.12l-78.913 90.197 92.838 122.735h-72.695l-56.932-74.439-65.145 74.439h-36.146l84.407-96.474-89.058-116.458h74.535l51.464 68.04 59.525-68.04zM311.06 339.666h20.018L201.876 168.842h-21.478L311.06 339.666z"
+                        /></svg
+                ></a>
+            </section>
         </footer>
     </body>
 </html>
