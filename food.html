@@ -3,23 +3,39 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
+        <!-- Icon -->
         <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
         />
+
+        <!-- Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+            rel="stylesheet"
+        />
+
+        <!-- Stylesheet -->
         <link rel="stylesheet" href="styles/normalize-fwd" />
         <link rel="stylesheet" href="styles/styles.css" />
     </head>
+
     <body>
-        <header>
+        <header class="site-header">
             <!-- Logo, Navigation -->
-            <a href="">
-                <img src="media/logo_jeju.png" alt="Website Logo" />
+            <a href="index.html">
+                <img
+                    src="media/logo_jeju.png"
+                    alt="Website Logo"
+                    class="logo"
+                />
             </a>
 
-            <nav>
-                <button>
-                    <img src="media/navicon.png" alt="Hamburger Icon" />
+            <nav class="site-navigation">
+                <button class="navicon">
+                    <img src="media/navicon.svg" alt="Navigation menu icon" />
                 </button>
 
                 <ul class="nav-list">
@@ -33,9 +49,12 @@
 
         <main>
             <h1>Food</h1>
-            <h2>Lorem</h2>
+
+            <h2>Land</h2>
+
             <section>
-                <img src="" alt="" />
+                <h3>Black Pork BBQ</h3>
+                <img src="media/blackpork.jpg" alt="Black pork bbq" />
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam provident accusantium officiis ullam error. Commodi
@@ -43,7 +62,8 @@
                 </p>
             </section>
             <section>
-                <img src="" alt="" />
+                <h3>Pork Noodle</h3>
+                <img src="media/porknoodle.jpg" alt="Pork noodle" />
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam provident accusantium officiis ullam error. Commodi
@@ -51,9 +71,10 @@
                 </p>
             </section>
 
-            <h2>Lorem</h2>
+            <h2>Sea</h2>
             <section>
-                <img src="" alt="" />
+                <h3>Beltfish</h3>
+                <img src="media/beltfish.jpg" alt="Grilled beltfish" />
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam provident accusantium officiis ullam error. Commodi
@@ -61,7 +82,8 @@
                 </p>
             </section>
             <section>
-                <img src="" alt="" />
+                <h3>Moom-guk</h3>
+                <img src="media/moombuk.jpg" alt="Moom-guk" />
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam provident accusantium officiis ullam error. Commodi
@@ -69,7 +91,8 @@
                 </p>
             </section>
             <section>
-                <img src="" alt="" />
+                <h3>Abalone</h3>
+                <img src="media/abalone.jpg" alt="Grilled abalone" />
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam provident accusantium officiis ullam error. Commodi
@@ -77,9 +100,10 @@
                 </p>
             </section>
 
-            <h2>Lorem</h2>
+            <h2>Dessert</h2>
             <section>
-                <img src="" alt="" />
+                <h3>Omegi Rice Cake</h3>
+                <img src="media/omegitteok.jpg" alt="Omegi rice cake" />
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam provident accusantium officiis ullam error. Commodi
@@ -87,7 +111,8 @@
                 </p>
             </section>
             <section>
-                <img src="" alt="" />
+                <h3>Jeju Tangerine</h3>
+                <img src="media/hallabong.jpg" alt="Jeju tangerine" />
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam provident accusantium officiis ullam error. Commodi
@@ -95,7 +120,11 @@
                 </p>
             </section>
             <section>
-                <img src="" alt="" />
+                <h3>Green Tea</h3>
+                <img
+                    src="media/osulloc-tea.jpg"
+                    alt="Set of green tea based drinks"
+                />
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Quisquam provident accusantium officiis ullam error. Commodi
@@ -104,13 +133,15 @@
             </section>
         </main>
 
-        <footer>
+        <footer class="site-footer">
             <!-- Copyright, Social media -->
             <p>&#169; 2024 Dayna Cho</p>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-instagram"></a>
-            <a href="#" class="fa fa-x-twitter"></a>
+            <section class="social-network">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-x-twitter"></a>
+            </section>
         </footer>
     </body>
 </html>
