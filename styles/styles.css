@@ -188,7 +188,8 @@ a:active {
 --------------------------------------------- */
 /* Specific styles for each page go here */
 
-/* Home Page */
+/* Home Page 
+--------------------------------------------- */
 
 .hero {
     position: relative;
@@ -201,55 +202,125 @@ video {
     width: 100%;
     /* height: 25rem; */
     height: 70vh;
+    object-fit: cover;
+    object-position: left;
 }
 
-.hello {
+.hero-header {
     position: absolute;
-    top: 100;
-    width: 70%;
-    background-color: rgb(254, 245, 240, 0.5);
+    top: 90;
+    /* width: 70%; */
+    background-color: rgb(254, 245, 240, 0.75);
     color: rgb(55, 52, 53);
+    padding: 0 5rem 0 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    font-size: 3rem;
+    text-shadow: 2px 2px #992626;
 }
 
 .jeju-name {
     color: #ec702e;
+    text-decoration: underline #992626;
 }
 
 .arrow-down svg {
     position: absolute;
     z-index: 1;
     top: 180;
-    width: 3rem;
+    width: 2.5rem;
 }
 
 blockquote {
     position: relative;
+    text-align: center;
+    width: fit-content;
+    margin: 3rem auto;
 }
 
-blockquote svg {
-    width: 3rem;
+.section-bottom svg {
+    width: 2.5rem;
     position: absolute;
+    opacity: 0.6;
 }
 
-/* Culture Page */
+.open-quote {
+    left: 10;
+    top: -20;
+}
+
+/* .close-quote {
+    bottom: 25;
+    right: -40;
+} */
+
+/* Mini Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: auto repeat(4, minmax(4rem, 8rem)) auto;
+    grid-template-rows: repeat(3, 8rem);
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.gallery img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-one {
+    grid-column: 2 / 4;
+}
+
+.gallery-two {
+    object-position: left;
+}
+
+.gallery-three {
+    grid-row: 1 / 4;
+    grid-column: 5 / 6;
+}
+
+.gallery-four {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    object-position: right;
+}
+
+.gallery-five {
+    grid-column: 3 / 5;
+}
+
+.gallery-six {
+    grid-column: 2 / 5;
+    object-position: 50% 60%;
+}
+
+/* Culture Page 
+--------------------------------------------- */
 
 .site-header {
     position: sticky;
     top: 0;
 }
 
-/* Food Page */
+/* Food Page 
+--------------------------------------------- */
 
-/* Explore Page */
+/* Explore Page 
+--------------------------------------------- */
 
-/* Credits Page */
+/* Credits Page 
+--------------------------------------------- */
 
 /* Footer
 --------------------------------------------- */
 
 .site-footer {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute; */
+    /* bottom: 0; */
     display: flex;
     width: 100%;
     flex-direction: column;
