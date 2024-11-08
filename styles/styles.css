@@ -306,6 +306,43 @@ blockquote {
     top: 0;
 }
 
+.main-culture section {
+    padding: 1rem 3rem 3rem;
+}
+
+.main-culture h2 {
+    text-decoration: underline;
+}
+
+.main-culture article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-left {
+    background-color: #777324;
+    color: #fff;
+}
+
+.main-culture img:not(.img-vertical) {
+    width: 13rem;
+}
+
+.img-vertical {
+    height: 18rem;
+}
+
+@media (min-width: 37.5em) {
+    .main-culture article {
+        flex-wrap: nowrap;
+        gap: 2rem;
+    }
+
+    .img-right img {
+        order: 1;
+    }
+}
+
 /* Food Page 
 --------------------------------------------- */
 
