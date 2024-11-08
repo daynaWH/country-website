@@ -306,45 +306,36 @@ blockquote {
     top: 0;
 }
 
-.main-culture section {
-    padding: 1rem 3rem 3rem;
+/* Food Page */
+
+.main-food h2 {
+    text-align: center;
+    width: 80%;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
 }
 
-.main-culture h2 {
-    text-decoration: underline;
-}
-
-.main-culture article {
+.main-food section {
     display: flex;
+    justify-content: center;
+    gap: 3rem;
     flex-wrap: wrap;
+    margin: 3rem;
 }
 
-.img-left {
-    background-color: #777324;
-    color: #fff;
+.main-food article {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    border: solid;
 }
 
-.main-culture img:not(.img-vertical) {
-    width: 13rem;
+.main-food article h3,
+.main-food article p {
+    padding: 1rem;
+    margin: 0;
 }
-
-.img-vertical {
-    height: 18rem;
-}
-
-@media (min-width: 37.5em) {
-    .main-culture article {
-        flex-wrap: nowrap;
-        gap: 2rem;
-    }
-
-    .img-right img {
-        order: 1;
-    }
-}
-
-/* Food Page 
---------------------------------------------- */
 
 /* Explore Page 
 --------------------------------------------- */
@@ -356,8 +347,8 @@ blockquote {
 --------------------------------------------- */
 
 .site-footer {
-    /* position: absolute; */
-    /* bottom: 0; */
+    /* position: absolute;
+    bottom: 0; */
     display: flex;
     width: 100%;
     flex-direction: column;
