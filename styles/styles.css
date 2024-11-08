@@ -347,7 +347,8 @@ blockquote {
     .main-culture article {
         flex-wrap: nowrap;
         gap: 2rem;
-   
+    }
+}
 
 /* Food Page */
 
