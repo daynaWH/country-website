@@ -306,6 +306,49 @@ blockquote {
     top: 0;
 }
 
+.main-culture section {
+    padding: 1rem 3rem 3rem;
+}
+
+.main-culture h2 {
+    text-decoration: underline;
+}
+
+.main-culture article {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.img-left {
+    background-color: #777324;
+    color: #fff;
+}
+
+.main-culture img:not(.img-vertical) {
+    width: 13rem;
+    height: 100%;
+}
+
+.img-vertical {
+    height: 18rem;
+    box-shadow: 5px 5px;
+    transform: rotate(10deg);
+}
+
+.img-left img:not(.img-vertical) {
+    box-shadow: -5px -5px;
+}
+
+.img-right img {
+    box-shadow: 5px 5px;
+}
+
+@media (min-width: 37.5em) {
+    .main-culture article {
+        flex-wrap: nowrap;
+        gap: 2rem;
+   
+
 /* Food Page */
 
 .main-food h2 {
