@@ -326,10 +326,21 @@ blockquote {
 
 .main-culture img:not(.img-vertical) {
     width: 13rem;
+    height: 100%;
 }
 
 .img-vertical {
     height: 18rem;
+    box-shadow: 5px 5px;
+    transform: rotate(10deg);
+}
+
+.img-left img:not(.img-vertical) {
+    box-shadow: -5px -5px;
+}
+
+.img-right img {
+    box-shadow: 5px 5px;
 }
 
 @media (min-width: 37.5em) {
