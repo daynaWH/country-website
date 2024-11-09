@@ -73,13 +73,13 @@ table {
 }
 
 .btn-up {
-    position: fixed;
+    position: sticky;
+    display: block;
     bottom: 50;
-    right: 20;
     width: 2.7rem;
+    margin-left: 85%;
     border: none;
     background-color: transparent;
-    padding: 0;
 }
 
 button {
@@ -188,8 +188,7 @@ a:active {
 --------------------------------------------- */
 /* Specific styles for each page go here */
 
-/* Home Page 
---------------------------------------------- */
+/* *************** Home Page **************** */
 
 .hero {
     position: relative;
@@ -298,8 +297,7 @@ blockquote {
     object-position: 50% 60%;
 }
 
-/* Culture Page 
---------------------------------------------- */
+/* *************** Culture Page **************** */
 
 .site-header {
     position: sticky;
@@ -350,7 +348,7 @@ blockquote {
     }
 }
 
-/* Food Page */
+/* *************** Food Page **************** */
 
 .main-food h2 {
     text-align: center;
@@ -381,11 +379,64 @@ blockquote {
     margin: 0;
 }
 
-/* Explore Page 
---------------------------------------------- */
+/* *************** Explore Page **************** */
 
-/* Credits Page 
---------------------------------------------- */
+.explore-banner {
+    width: 100%;
+    text-align: center;
+}
+
+.explore-banner img {
+    height: 20rem;
+}
+
+.explore section img {
+    width: 100%;
+}
+
+.explore article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18rem;
+    background-color: white;
+    padding: 0.5rem 1rem 4rem;
+    margin: 4rem auto;
+}
+
+.explore h3 {
+    padding: 1rem;
+}
+
+.explore article:before {
+    content: "";
+    position: relative;
+    width: 6rem;
+    height: 2.5rem;
+    top: -27;
+    right: 130;
+    transform: rotate(-40deg);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Sticky bottom navigation */
+
+.explore-nav {
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+    background-color: black;
+}
+
+.explore-nav ul {
+    display: flex;
+    background-color: #292d11;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0.7rem;
+}
+
+/* *************** Credits Page **************** */
 
 /* Footer
 --------------------------------------------- */
