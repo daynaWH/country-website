@@ -369,6 +369,10 @@ blockquote {
         flex-wrap: nowrap;
         gap: 2rem;
     }
+
+    .img-right img {
+        order: 1;
+    }
 }
 
 /* *************** Food Page **************** */
