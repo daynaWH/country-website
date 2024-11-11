@@ -518,9 +518,9 @@
             </table>
 
             <!-- Contact form - Name, Email address, Textarea, Radio Submit-->
-            <form action="#" method="post">
+            <form action="#" method="post" class="contact-form">
                 <h2>Contact Us</h2>
-                <p>Would like to know more? Feel free to reach out!</p>
+                <p>Would like to know more?<br />Feel free to reach out!</p>
 
                 <label for="name"></label>
                 Your Name
@@ -530,23 +530,31 @@
                 <input id="mail" type="email" name="user-email" required />
 
                 <label for="message">Message</label>
-                <textarea id="message" name="user-msg" required></textarea>
+                <textarea
+                    id="message"
+                    name="user-msg"
+                    rows="5"
+                    cols="30"
+                    required
+                ></textarea>
 
                 <label>Have you been to Jeju Island before?</label>
-                <input
-                    id="visited"
-                    type="radio"
-                    name="user-visited"
-                    value="yes"
-                />
-                <label for="visited">Yes</label>
-                <input
-                    id="not-visited"
-                    type="radio"
-                    name="user-visited"
-                    value="no"
-                />
-                <label for="not-visited">No</label>
+                <div class="radio">
+                    <input
+                        id="visited"
+                        type="radio"
+                        name="user-visited"
+                        value="yes"
+                    />
+                    <label for="visited">Yes</label>
+                    <input
+                        id="not-visited"
+                        type="radio"
+                        name="user-visited"
+                        value="no"
+                    />
+                    <label for="not-visited">No</label>
+                </div>
 
                 <input type="submit" value="Submit" />
             </form>

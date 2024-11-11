@@ -456,6 +456,45 @@ blockquote {
 
 /* *************** Credits Page **************** */
 
+.credits table,
+.credits h2 {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.credits h2 {
+    text-align: center;
+    margin-top: 4rem;
+    border-bottom: solid;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 20rem;
+    align-items: center;
+    border: solid black;
+    margin: 3rem auto 0;
+}
+
+.contact-form input:not(input[type="radio"]),
+.contact-form textarea {
+    border: none;
+    padding: 0.5rem;
+    width: 70%;
+}
+
+.contact-form label {
+    margin: 0.5rem;
+}
+
+input[type="submit"] {
+    margin: 1rem;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
 /* Footer
 --------------------------------------------- */
 
