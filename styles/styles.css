@@ -117,6 +117,8 @@ a:active {
 --------------------------------------------- */
 
 .site-header {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -125,7 +127,7 @@ a:active {
     z-index: 1;
     left: 0;
     right: 0;
-    background-color: rgb(254, 245, 240, 0.8);
+    background-color: rgb(254, 245, 240);
 }
 
 .site-navigation button {
@@ -185,6 +187,35 @@ a:active {
     transition: all 0.5s ease;
 }
 
+/* Navigation - Desktop View */
+
+@media (min-width: 37.5em) {
+    .site-navigation button {
+        display: none;
+    }
+
+    .site-header {
+        padding: 0 3rem;
+    }
+
+    .site-navigation ul#nav-list {
+        visibility: visible;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        height: auto;
+        top: 0;
+        margin: 0;
+        font-size: 1.2rem;
+        background-color: transparent;
+    }
+
+    .site-navigation ul li {
+        margin: 0;
+        padding: 0 0.5rem;
+    }
+}
+
 /* Banner */
 
 .banner {
@@ -212,7 +243,7 @@ a:active {
         height: 30rem;
     }
 
-    .credits-main header img {
+    .credits header img {
         object-position: top;
     }
 }
@@ -220,6 +251,10 @@ a:active {
 /* Main
 --------------------------------------------- */
 /* Specific styles for each page go here */
+
+main {
+    margin-top: 4rem;
+}
 
 /* *************** Home Page **************** */
 
@@ -331,11 +366,6 @@ blockquote {
 }
 
 /* *************** Culture Page **************** */
-
-.site-header {
-    position: sticky;
-    top: 0;
-}
 
 .culture-main section {
     padding: 1rem 3rem 3rem;
