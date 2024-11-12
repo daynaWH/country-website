@@ -79,6 +79,13 @@ button {
     fill: #ec702e;
 }
 
+blockquote {
+    position: relative;
+    text-align: center;
+    width: fit-content;
+    margin: 3rem auto;
+}
+
 /* Links
 --------------------------------------------- */
 
@@ -243,6 +250,8 @@ main {
     background-color: rgb(0, 0, 0, 0.6);
 }
 
+/* Banner - Desktop View */
+
 @media (min-width: 37.5em) {
     .banner img {
         height: 30rem;
@@ -268,7 +277,6 @@ video {
     position: absolute;
     object-fit: cover;
     width: 100%;
-    /* height: 25rem; */
     height: 70vh;
     object-fit: cover;
     object-position: left;
@@ -277,7 +285,6 @@ video {
 .hero-header {
     position: absolute;
     top: 90;
-    /* width: 70%; */
     background-color: rgb(254, 245, 240, 0.75);
     color: rgb(55, 52, 53);
     padding: 0 5rem 0 2rem;
@@ -292,20 +299,6 @@ video {
     text-decoration: underline #992626;
 }
 
-.arrow-down svg {
-    position: absolute;
-    z-index: 1;
-    top: 180;
-    width: 2.5rem;
-}
-
-blockquote {
-    position: relative;
-    text-align: center;
-    width: fit-content;
-    margin: 3rem auto;
-}
-
 .section-bottom svg {
     width: 2.5rem;
     position: absolute;
@@ -316,11 +309,6 @@ blockquote {
     left: 10;
     top: -20;
 }
-
-/* .close-quote {
-    bottom: 25;
-    right: -40;
-} */
 
 /* Mini Gallery */
 .gallery {
@@ -383,7 +371,7 @@ blockquote {
 }
 
 .img-left {
-    background-color: #777324;
+    background-color: #5e5b1c;
     color: #fff;
 }
 
@@ -406,6 +394,8 @@ blockquote {
     box-shadow: 10px 10px;
 }
 
+/* Culture - Desktop View */
+
 @media (min-width: 50em) {
     .culture-main article {
         flex-wrap: nowrap;
@@ -423,30 +413,56 @@ blockquote {
 .food-main h2 {
     text-align: center;
     width: 80%;
-    background-color: black;
-    color: white;
-    margin: 0 auto;
+    background-color: #5e5b1c;
+    color: #ffffff;
+    margin: 2rem auto;
 }
 
 .food-main section {
     display: flex;
     justify-content: center;
-    gap: 3rem;
     flex-wrap: wrap;
-    margin: 3rem;
 }
 
 .food-main article {
     display: flex;
     flex-direction: column;
     width: 15rem;
+    margin: 1rem;
     border: solid;
+    border-radius: 1rem;
+}
+
+.food-main img {
+    min-height: 11rem;
 }
 
 .food-main article h3,
-.food-main article p {
+.food-main article blockquote {
     padding: 1rem;
     margin: 0;
+}
+
+/* Food - Desktop View */
+
+@media (min-width: 50em) {
+    .food-main section {
+        display: grid;
+        gap: 1rem;
+    }
+
+    .food-land section {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .food-sea section,
+    .food-dessert section {
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .food-main section article:first-of-type {
+        grid-column: 2 / 3;
+    }
 }
 
 /* *************** Explore Page **************** */
@@ -511,6 +527,8 @@ blockquote {
     margin: 0;
     padding: 0.7rem;
 }
+
+/* Explore - Desktop View */
 
 @media (min-width: 50em) {
     .map img {
