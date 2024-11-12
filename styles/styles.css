@@ -379,6 +379,7 @@ blockquote {
 .culture-main article {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .img-left {
@@ -387,7 +388,7 @@ blockquote {
 }
 
 .culture-main section img:not(.img-vertical) {
-    width: 13rem;
+    width: 17rem;
     height: 100%;
 }
 
@@ -398,16 +399,17 @@ blockquote {
 }
 
 .img-left img:not(.img-vertical) {
-    box-shadow: -5px -5px;
+    box-shadow: -10px -10px;
 }
 
 .img-right img {
-    box-shadow: 5px 5px;
+    box-shadow: 10px 10px;
 }
 
-@media (min-width: 37.5em) {
+@media (min-width: 50em) {
     .culture-main article {
         flex-wrap: nowrap;
+        align-items: center;
         gap: 2rem;
     }
 
