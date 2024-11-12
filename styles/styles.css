@@ -408,8 +408,18 @@ blockquote {
 
 /* *************** Explore Page **************** */
 
+.map {
+    text-align: center;
+}
+
 .map img {
     height: 20rem;
+}
+
+.explore h2 {
+    margin: 2rem;
+    padding-left: 2rem;
+    border-bottom: solid;
 }
 
 .explore section img {
@@ -448,6 +458,7 @@ blockquote {
     width: 100%;
     bottom: 0;
     background-color: black;
+    z-index: 200;
 }
 
 .explore-nav ul {
@@ -456,6 +467,59 @@ blockquote {
     justify-content: space-evenly;
     margin: 0;
     padding: 0.7rem;
+}
+
+@media (min-width: 50em) {
+    .map img {
+        height: 30rem;
+    }
+
+    .explore-main section {
+        height: 52rem;
+    }
+
+    .explore-main section:first-of-type {
+        height: 40rem;
+    }
+
+    .explore-main section {
+        position: relative;
+        top: 35;
+    }
+
+    .explore-main article {
+        position: absolute;
+        padding-top: 4rem;
+    }
+
+    .explore-main article:first-of-type {
+        left: 7%;
+        transform: rotate(-7deg);
+    }
+
+    .explore-main article:nth-of-type(2) {
+        left: 27%;
+    }
+
+    .explore-main article:nth-of-type(3) {
+        right: 27%;
+        transform: rotate(5deg);
+    }
+
+    .explore-main article:last-of-type {
+        right: 7%;
+        transform: rotate(7deg);
+    }
+
+    .explore article:before {
+        display: none;
+    }
+
+    .explore article:hover {
+        z-index: 100;
+        width: 22rem;
+        transform: rotate(0);
+    }
 }
 
 /* *************** Credits Page **************** */
