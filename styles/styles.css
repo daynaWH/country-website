@@ -47,25 +47,13 @@ h6 {
     text-transform: uppercase;
 }
 
-p {
-}
-
 /* Elements
 --------------------------------------------- */
 ul {
     list-style: none;
 }
 
-ol {
-}
-
-dl {
-}
-
 figure {
-}
-
-table {
 }
 
 .logo {
@@ -87,6 +75,10 @@ button {
     cursor: pointer;
 }
 
+.btn-up:hover {
+    fill: #ec702e;
+}
+
 /* Links
 --------------------------------------------- */
 
@@ -96,19 +88,13 @@ a:visited {
     text-decoration: none;
 }
 
-a:hover {
-    color: ;
-}
-
-a:focus {
-}
-
-a:active {
-}
-
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
+
+main {
+    margin-top: 4rem;
+}
 
 /*--------------------------------------------------------------
 # Components
@@ -158,6 +144,17 @@ a:active {
     padding: 1rem;
 }
 
+.site-navigation a:hover,
+.site-navigation a:focus,
+.site-navigation a:active {
+    color: #fef5f0;
+    background-color: #027ec2;
+    font-size: 1.3rem;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    border-left: solid 5px #ec702ec2;
+}
+
 /* Navigation Menu Toggle */
 
 #nav-btn {
@@ -203,6 +200,7 @@ a:active {
         visibility: visible;
         display: flex;
         justify-content: flex-end;
+        align-items: center;
         position: relative;
         height: auto;
         top: 0;
@@ -214,6 +212,12 @@ a:active {
     .site-navigation ul li {
         margin: 0;
         padding: 0 0.5rem;
+    }
+
+    .site-navigation a:hover,
+    .site-navigation a:focus,
+    .site-navigation a:active {
+        padding: 0.5rem;
     }
 }
 
@@ -252,10 +256,6 @@ a:active {
 /* Main
 --------------------------------------------- */
 /* Specific styles for each page go here */
-
-main {
-    margin-top: 4rem;
-}
 
 /* *************** Home Page **************** */
 
