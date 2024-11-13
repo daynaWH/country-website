@@ -60,7 +60,7 @@ ul {
 .btn-up {
     position: sticky;
     display: block;
-    bottom: 50;
+    bottom: 3rem;
     width: 2.7rem;
     margin-left: 85%;
     border: none;
@@ -238,11 +238,12 @@ main {
     height: 25rem;
     width: 100%;
     object-fit: cover;
+    display: block;
 }
 
 .banner h1 {
     position: absolute;
-    bottom: 50;
+    bottom: 3rem;
     width: 100%;
     text-align: center;
     padding: 0.5rem 0;
@@ -284,7 +285,7 @@ main {
 
 .hero-header {
     position: absolute;
-    top: 90;
+    top: 6rem;
     background-color: #fef5f0bf;
     color: #373435;
     padding: 0 5rem 0 2rem;
@@ -299,15 +300,12 @@ main {
     text-decoration: underline #373435;
 }
 
-.section-bottom svg {
+.open-quote {
     width: 2.5rem;
     position: absolute;
     opacity: 0.6;
-}
-
-.open-quote {
-    left: 10;
-    top: -20;
+    left: 0.8rem;
+    top: -1.25rem;
 }
 
 /* Mini Gallery */
@@ -508,8 +506,8 @@ main {
     position: relative;
     width: 6rem;
     height: 2.5rem;
-    top: -25;
-    right: 145;
+    top: -1.5rem;
+    right: 9rem;
     transform: rotate(-40deg);
     background-color: rgba(0, 0, 0, 0.5);
 }
