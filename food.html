@@ -1,8 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Jeju - Food</title>
+        <meta
+            name="description"
+            content="Recommendation of authentic food of Jeju Island"
+        />
 
         <!-- Favicon -->
         <link
@@ -38,8 +43,10 @@
     </head>
 
     <body class="food">
+        <a class="screen-reader-text" href="#food-top">Skip to content</a>
+
+        <!-- Header - Logo, Navigation -->
         <header class="site-header">
-            <!-- Logo, Navigation -->
             <a href="index.html">
                 <img
                     src="media/logo_jeju.svg"
@@ -76,11 +83,13 @@
         </header>
 
         <main class="food-main" id="food-top">
+            <!-- Banner -->
             <header class="banner">
                 <h1>Food</h1>
                 <img src="media/food-banner.jpg" alt="Green tea leaves field" />
             </header>
 
+            <!-- Main section - Images and Descriptions -->
             <div class="food-land">
                 <h2>Land</h2>
                 <section>
@@ -125,7 +134,10 @@
                     </article>
                     <article>
                         <h3>Gulfweed Soup</h3>
-                        <img src="media/moombuk.jpg" alt="Moom-guk" />
+                        <img
+                            src="media/moombuk.jpg"
+                            alt="Moom-guk, Gulfweed Soup"
+                        />
                         <blockquote
                             cite="https://english.visitkorea.or.kr/svc/thingsToDo/foodTrip/special_view.do?vcontsId=182469"
                         >
@@ -186,8 +198,13 @@
                 </section>
             </div>
 
+            <!-- Fixed Back to Top button -->
             <a href="#food-top" class="btn-up">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    aria-label="Back to top button"
+                >
                     <path
                         d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-2v-5l-5 5v-3h-6v-4h6v-3l5 5v-5h2v10z"
                     />
@@ -195,8 +212,8 @@
             </a>
         </main>
 
+        <!-- Footer - Copyright, Social media -->
         <footer class="site-footer">
-            <!-- Copyright, Social media -->
             <p>&#169; 2024 Dayna Cho</p>
             <section class="social-network">
                 <a href="#"

@@ -1,8 +1,13 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Jeju - Home</title>
+        <meta
+            name="description"
+            content="Introducing Jeju Island, South Korea"
+        />
 
         <!-- Favicon -->
         <link
@@ -37,9 +42,11 @@
         <script src="scripts/scripts.js" defer></script>
     </head>
 
-    <body>
+    <body class="home">
+        <a class="screen-reader-text" href="#home-top">Skip to content</a>
+
+        <!-- Header - Logo, Navigation -->
         <header class="site-header">
-            <!-- Logo, Navigation -->
             <a href="index.html">
                 <img
                     src="media/logo_jeju.svg"
@@ -75,10 +82,9 @@
             </nav>
         </header>
 
-        <main>
-            <!-- Hero, fixed Back to Top button, Basic Info -->
-
-            <header class="hero">
+        <main class="home-main" id="home-top">
+            <!-- Hero, Blockquote, Mini Gallery -->
+            <header class="home-hero">
                 <video autoplay loop muted poster="media/hyeopjae.jpg">
                     <source src="media/hero-saeyeongyo.mp4" type="video/mp4" />
                 </video>
@@ -88,7 +94,7 @@
             </header>
 
             <section class="section-bottom" id="section-bottom">
-                <blockquote cite="">
+                <blockquote>
                     <svg
                         clip-rule="evenodd"
                         fill-rule="evenodd"
@@ -123,7 +129,7 @@
                     <img
                         src="media/3.jpg"
                         class="gallery-three"
-                        alt="Cheonjiyeon waterfall"
+                        alt="Seogwipo Jeongbang waterfall"
                     />
                     <img
                         src="media/4.jpg"
@@ -144,8 +150,8 @@
             </section>
         </main>
 
+        <!-- Footer - Copyright, Social media -->
         <footer class="site-footer">
-            <!-- Copyright, Social media -->
             <p>&#169; 2024 Dayna Cho</p>
             <section class="social-network">
                 <a href="#"
