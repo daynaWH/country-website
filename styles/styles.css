@@ -53,9 +53,6 @@ ul {
     list-style: none;
 }
 
-figure {
-}
-
 .logo {
     width: 3rem;
 }
@@ -91,7 +88,7 @@ blockquote {
 
 a,
 a:visited {
-    color: #ec702e;
+    color: #a71401;
     text-decoration: none;
 }
 
@@ -155,7 +152,7 @@ main {
 .site-navigation a:focus,
 .site-navigation a:active {
     color: #fef5f0;
-    background-color: #027ec2;
+    background-color: #5e5b1c;
     font-size: 1.3rem;
     font-weight: 700;
     letter-spacing: 0.3rem;
@@ -185,11 +182,14 @@ main {
 }
 
 #nav-list.open {
-    /* display: block; */
     visibility: visible;
     position: absolute;
     height: 100vh;
     transition: all 0.5s ease;
+}
+
+#nav-list.open a {
+    color: #ec7636;
 }
 
 /* Navigation - Desktop View */
@@ -246,8 +246,8 @@ main {
     width: 100%;
     text-align: center;
     padding: 0.5rem 0;
-    color: white;
-    background-color: rgb(0, 0, 0, 0.6);
+    color: #ffffff;
+    background-color: #00000099;
 }
 
 /* Banner - Desktop View */
@@ -268,12 +268,12 @@ main {
 
 /* *************** Home Page **************** */
 
-.hero {
+.home-hero {
     position: relative;
     height: 70vh;
 }
 
-video {
+.home video {
     position: absolute;
     object-fit: cover;
     width: 100%;
@@ -285,18 +285,18 @@ video {
 .hero-header {
     position: absolute;
     top: 90;
-    background-color: rgb(254, 245, 240, 0.75);
-    color: rgb(55, 52, 53);
+    background-color: #fef5f0bf;
+    color: #373435;
     padding: 0 5rem 0 2rem;
     font-size: 3rem;
     font-weight: 700;
     font-size: 3rem;
-    text-shadow: 2px 2px #992626;
+    text-shadow: 2px 2px #ec702e;
 }
 
 .jeju-name {
-    color: #ec702e;
-    text-decoration: underline #992626;
+    color: #992626;
+    text-decoration: underline #373435;
 }
 
 .section-bottom svg {
@@ -311,6 +311,7 @@ video {
 }
 
 /* Mini Gallery */
+
 .gallery {
     display: grid;
     grid-template-columns: auto repeat(4, minmax(4rem, 8rem)) auto;
@@ -601,25 +602,56 @@ video {
 
 /* *************** Credits Page **************** */
 
+/* Table */
+
 .credits table,
 .credits h2 {
     width: 70%;
     margin: 0 auto;
 }
 
+.credits table {
+    border-collapse: collapse;
+    line-height: 1.8rem;
+}
+
 .credits h2 {
     text-align: center;
     margin-top: 4rem;
-    border-bottom: solid;
+    padding: 0.5rem 0;
+    background-color: #f9dac7;
+    border-radius: 2rem 2rem 0 0;
 }
+
+.credits tbody {
+    border: solid;
+}
+
+.credits th {
+    border-bottom: double #5e5b1c;
+    padding: 0.4rem;
+    font-size: 1.2rem;
+}
+
+.credits td {
+    padding-left: 1rem;
+    border-bottom: dotted 1px;
+}
+
+/* Contact Form */
 
 .contact-form {
     display: flex;
     flex-direction: column;
     width: 20rem;
     align-items: center;
-    border: solid black;
-    margin: 3rem auto 0;
+    border: solid 1px black;
+    margin: 5rem auto 0;
+    background-color: #f9dac7;
+}
+
+.contact-form h2 {
+    margin-top: 2rem;
 }
 
 .contact-form input:not(input[type="radio"]),
@@ -638,14 +670,20 @@ input[type="submit"] {
     font-family: "Alegreya Sans", sans-serif;
     font-size: 1.1rem;
     cursor: pointer;
+    background-color: #5e5b1c;
+    color: #ffffff;
+}
+
+input[type="submit"]:hover {
+    text-decoration: underline;
+    background-color: #fef5f0;
+    color: #525019;
 }
 
 /* Footer
 --------------------------------------------- */
 
 .site-footer {
-    /* position: absolute;
-    bottom: 0; */
     display: flex;
     width: 100%;
     flex-direction: column;
