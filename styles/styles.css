@@ -468,11 +468,14 @@ video {
 /* *************** Explore Page **************** */
 
 .map {
+    margin: 0;
     text-align: center;
+    font-style: italic;
 }
 
 .map img {
     height: 20rem;
+    max-width: 100%;
 }
 
 .explore h2 {
@@ -491,7 +494,7 @@ video {
     align-items: center;
     width: 18rem;
     background-color: white;
-    padding: 0.5rem 1rem 4rem;
+    padding: 0.5rem 1rem 2.5rem;
     margin: 4rem auto;
 }
 
@@ -504,8 +507,8 @@ video {
     position: relative;
     width: 6rem;
     height: 2.5rem;
-    top: -27;
-    right: 130;
+    top: -25;
+    right: 145;
     transform: rotate(-40deg);
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -516,16 +519,29 @@ video {
     position: sticky;
     width: 100%;
     bottom: 0;
-    background-color: black;
     z-index: 200;
 }
 
 .explore-nav ul {
     display: flex;
-    background-color: #292d11;
+    background-color: #f5bc41;
     justify-content: space-evenly;
     margin: 0;
     padding: 0.7rem;
+}
+
+.explore-nav li a {
+    color: #292d11;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 0 1rem;
+}
+
+.explore-nav li a:hover,
+.explore-nav li a:focus,
+.explore-nav li a:active {
+    border-bottom: solid;
+    font-size: 1.3rem;
 }
 
 /* Explore - Desktop View */
