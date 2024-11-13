@@ -425,6 +425,7 @@ main {
     background-color: #5e5b1c;
     color: #ffffff;
     margin: 2rem auto;
+    padding: 0.3rem 0;
 }
 
 .food-main section {
@@ -457,16 +458,22 @@ main {
 @media (min-width: 50em) {
     .food-main section {
         display: grid;
+        grid-template-rows: repeat(2, auto);
         gap: 1rem;
     }
 
-    .food-land section {
+    .food-land {
         grid-template-columns: repeat(4, 1fr);
     }
 
-    .food-sea section,
-    .food-dessert section {
+    .food-sea,
+    .food-dessert {
         grid-template-columns: repeat(5, 1fr);
+    }
+
+    .food-main h2 {
+        grid-column: 1 / span 5;
+        grid-row: 1 / 2;
     }
 
     .food-main section article:first-of-type {
