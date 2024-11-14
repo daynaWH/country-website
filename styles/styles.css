@@ -585,21 +585,21 @@ main {
     }
 
     .explore-main article:first-of-type {
-        left: 7%;
+        left: 10%;
         transform: rotate(-7deg);
     }
 
     .explore-main article:nth-of-type(2) {
-        left: 27%;
+        left: 30%;
     }
 
     .explore-main article:nth-of-type(3) {
-        right: 27%;
+        right: 30%;
         transform: rotate(5deg);
     }
 
     .explore-main article:last-of-type {
-        right: 7%;
+        right: 10%;
         transform: rotate(7deg);
     }
 
